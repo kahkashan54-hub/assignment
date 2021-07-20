@@ -19,7 +19,7 @@ let titleOfCard,imageOfCard,callButton,card;
             .map((data)=>{
                 titleOfCard =document.createElement("p"); // Creating p tag for displaying name.
                 titleOfCard.classList.add("card__title"); // Adding class card__title in p tag.
-                titleOfCard.innerHTML=data.name.first+ " " +data.name.last; // Getting first name and last name and concatinating it.
+                titleOfCard.innerHTML=`${data.name.first+" "+data.name.last}`; // Getting first name and last name and concatinating it.
                 imageOfCard=document.createElement("img");// Creating img for displaying image.
                 imageOfCard.classList.add("card__image");// Adding class card__image in img.
                 imageOfCard.setAttribute("src", data.picture.large); // displaying image from the response.
