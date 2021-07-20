@@ -15,7 +15,7 @@ let titleOfCard,imageOfCard,callButton,card;
           })
           .then(function (apiResponse) {
             const apiResponseResults=apiResponse.results; //Getting the result from api where the required data is present.
-            apiResponseResults.filter(gender=>gender.gender=="male")// Using filter operator to filter out only male gender.
+            apiResponseResults.filter(gender=>gender.gender==="male")// Using filter operator to filter out only male gender.
             .map((data)=>{
                 titleOfCard =document.createElement("p"); // Creating p tag for displaying name.
                 titleOfCard.classList.add("card__title"); // Adding class card__title in p tag.
